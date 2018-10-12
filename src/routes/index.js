@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-import {getUsers} from '../controllers/user.ctrl';
+import {getUsers, getMitra} from '../controllers/user.ctrl';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,5 +8,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/api/users', getUsers);
+router.get('/api/mitra', getMitra);
 
 module.exports = router;

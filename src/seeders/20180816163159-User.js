@@ -19,8 +19,8 @@ module.exports = {
 
     let password = bcrypt.hashSync('admin', saltRounds);
     users.push({
-      firstname: `Joshua`,
-      lastname: `Suatan`,
+      firstname: `admin`,
+      lastname: `admin`,
       email: `admin@admin.com`,
       password: password,
       createdAt: new Date(),
